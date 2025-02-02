@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Huiswerk les 25, Javascript</title>
+    <script type="text/JavaScript"src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<br><br><br>
+<h1>Beweeg de muis over mij! :-)</h1>
+<script>
+  $("h1").hover(
+    function () {
+        $(this).css("color", "blue");
+        $(this).css("background-color", "yellow");
+        $(this).css("text-align", "center")
+    },
+    function () { // restore
+        $(this).css("color", "black");
+        $(this).css("background-color", "white");
+        $(this).css("text-align", "left")
+    }
+  );
+</script>
+</body>
+</html>
